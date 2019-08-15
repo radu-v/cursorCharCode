@@ -113,7 +113,7 @@ class CharCodeDisplay {
             hexCode = pad0(hexCode, 4);
         //console.log( `Text: ${cursorText}, number: ${charAsNumber}, hex=${hexCode}` );
 
-        this._statusBarItem.text = `$(telescope) U+${hexCode}`;
+        this._statusBarItem.text = `$(telescope) U+${hexCode}, ALTgr+${charAsNumber}`;
         this._hexCode = `${hexCode}`;
         this._statusBarItem.command = 'cursorCharCode.openUnicodeInfo';
         this._statusBarItem.show();
